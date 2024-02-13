@@ -1,0 +1,142 @@
+.home-container {
+  padding: 5rem 5rem;
+}
+
+.image-container {
+  padding: 4rem;
+}
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  /* margin-bottom: 2rem; */
+  /* color: white; */
+}
+.why-container {
+  padding: 1rem 4rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  /* max-width: 50rem; */
+  /* padding: 2rem; */
+  border-radius: 15%;
+}
+
+.play-icon-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.play-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #007a7a;
+  transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.play-icon-container:hover .play-icon {
+  transform: scale(1.5); /* Increase size on hover */
+  color: #f26a21;
+}
+
+.order-the-book {
+  padding: 0 6rem;
+}
+
+.heading {
+  font-size: 3rem;
+  padding-top: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.primary-button,
+.button-orderbook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 25px;
+  font-weight: bold;
+  margin: 8rem auto 0;
+  background-color: #c80815;
+  background-color: transparent;
+}
+
+.button-orderbook:hover {
+  border: white;
+  color: #ffffff !important;
+  background-color: #f26a21 !important;
+}
+.book-container {
+  padding: 4rem;
+}
+.book-image-container {
+  height: 40rem;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse; /* Reverse the order of columns for better stacking on small screens */
+    padding: 5rem 0 0 0;
+  }
+  .text-content {
+    padding: 0 1rem;
+  }
+
+  .home-container .ant-col {
+    width: 100%; /* Make columns take full width on small screens */
+  }
+  .home-container .ant-row {
+    flex-direction: column-reverse;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .why-container {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  .heading {
+    padding-top: 1rem;
+  }
+
+  .image-container {
+    padding: 0rem;
+  }
+  .book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-image-container {
+    height: 20rem;
+  }
+
+  .order-the-book {
+    padding: 1rem;
+  }
+  .button-orderbook {
+    margin-top: 0;
+  }
+
+  .why-container .ant-row {
+    flex-direction: column; /* Stack columns vertically on small screens */
+  }
+
+  .order-the-book .ant-col {
+    width: 100%; /* Make columns take full width on small screens */
+  }
+}

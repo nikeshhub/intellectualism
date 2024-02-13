@@ -1,0 +1,9 @@
+.contact-container{
+    padding: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container{
+        padding: 4rem 1rem;
+    }
+}
