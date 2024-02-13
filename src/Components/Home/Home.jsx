@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import { Row, Col, Button, Space, Carousel, Modal } from "antd";
+import { Row, Col, Button, Space, Carousel } from "antd";
 import {
   ArrowRightOutlined,
   PlayCircleFilled,
-  PlayCircleOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons";
-import Typist from "react-typist";
+
 import "./Home.css";
-import iFrame from "../iFrame/iFrame";
 import VideoPopup from "../iFrame/iFrame";
 
 const HomePage = () => {
@@ -42,17 +40,15 @@ const HomePage = () => {
           Individual's, Society 's and Country's
         </span>{" "}
         Destination <br />{" "}
-        <Typist avgTypingDelay={200} cursor={{ hideWhenDone: true }}>
-          <span
-            style={{
-              backgroundColor: "#f26a21",
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            Intellectualism
-          </span>
-        </Typist>
+        <span
+          style={{
+            backgroundColor: "#f26a21",
+            color: "white",
+            fontWeight: "bold",
+          }}
+        >
+          Intellectualism
+        </span>
       </h1>
       {/* <h2 className="header">Intellectualism </h2> */}
       <p style={{ fontSize: "2rem", color: "grey", marginBottom: "1.5rem" }}>

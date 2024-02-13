@@ -1,11 +1,8 @@
 import React from "react";
 import { Layout, Row, Col } from "antd";
 import {
-  LinkedinOutlined,
-  GithubOutlined,
   FacebookFilled,
   InstagramFilled,
-  XFilled,
   TikTokFilled,
   TwitterCircleFilled,
 } from "@ant-design/icons";
