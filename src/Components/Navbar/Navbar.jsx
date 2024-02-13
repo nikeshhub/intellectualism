@@ -59,20 +59,29 @@ const Navbar = () => {
                 style={{ flexGrow: 1 }}
               >
                 <Menu.Item key="1" icon={<HomeOutlined />}>
-                  <NavLink to="/">Home</NavLink>
-                  {/* <a href="/">Home</a> */}
+                  <NavLink to="/" activeClassName="active">
+                    Home
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item key="2" icon={<InfoCircleOutlined />}>
-                  <a href="/about">About</a>
+                  <NavLink to="/about" activeClassName="active">
+                    About
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item key="3" icon={<PictureOutlined />}>
-                  <a href="/gallery">Gallery</a>
+                  <NavLink to="/gallery" activeClassName="active">
+                    Gallery
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item key="4" icon={<TeamOutlined />}>
-                  <a href="/community">Community</a>
+                  <NavLink to="/community" activeClassName="active">
+                    Community
+                  </NavLink>
                 </Menu.Item>
                 <Menu.Item key="5" icon={<ContactsOutlined />}>
-                  <a href="/contact">Contact</a>
+                  <NavLink to="/contact" activeClassName="active">
+                    Contact
+                  </NavLink>
                 </Menu.Item>
               </Menu>
 
@@ -117,25 +126,35 @@ const Navbar = () => {
               icon={<HomeOutlined />}
               style={{ background: "transparent !important" }}
             >
-              <a href="/">Home</a>
+              <NavLink to="/" activeClassName="active">
+                Home
+              </NavLink>
             </Menu.Item>
             <Menu.Item
               key="2"
               icon={<InfoCircleOutlined />}
               className="nav-item"
             >
-              <a href="/about"> About </a>
+              <NavLink to="/about" activeClassName="active">
+                About
+              </NavLink>
             </Menu.Item>
             <Menu.Item key="3" icon={<PictureOutlined />} className="nav-item">
-              <a href="/gallery">Gallery </a>
+              <NavLink to="/gallery" activeClassName="active">
+                Gallery
+              </NavLink>
             </Menu.Item>
             <Menu.Item key="4" icon={<ContactsOutlined />} className="nav-item">
-              <a href="/contacts">Contacts </a>
+              <NavLink to="/contact" activeClassName="active">
+                Contacts
+              </NavLink>
             </Menu.Item>
             <Menu.Item key="5" icon={<TeamOutlined />} className="nav-item">
-              <a href="/community">Community </a>
+              <NavLink to="/community" activeClassName="active">
+                Community
+              </NavLink>
             </Menu.Item>
-            <Menu.Item key="5" className="nav-item">
+            <Menu.Item key="6" className="nav-item">
               <Button
                 style={{
                   color: "white",
@@ -148,7 +167,7 @@ const Navbar = () => {
                 Login
               </Button>
             </Menu.Item>
-            <Menu.Item key="5" className="nav-item">
+            <Menu.Item key="7" className="nav-item">
               <Button
                 style={{
                   backgroundColor: "#f26a21",
@@ -156,7 +175,9 @@ const Navbar = () => {
                   fontWeight: "bold",
                 }}
                 type="primary"
-              ></Button>
+              >
+                Sign Up
+              </Button>
             </Menu.Item>
           </Menu>
         </Drawer>

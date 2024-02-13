@@ -11,6 +11,11 @@
   /* padding-left: 20px; */
   /* padding-right: 20px; */
 }
+.layout .ant-menu-item.active,
+.layout .ant-menu-item-selected {
+  background-color: #1890ff !important; /* Change to the color you want for active menu item */
+  color: #fff !important;
+}
 .layout .ant-menu-horizontal {
   background-color: #42296e !important;
 }

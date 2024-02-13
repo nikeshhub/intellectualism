@@ -36,10 +36,10 @@ function AppFooter() {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/articles">Articles</NavLink>
+                <NavLink to="/gallery">Gallery</NavLink>
               </li>
               <li>
-                <NavLink to="/resources">Resources</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </ul>
           </Col>
