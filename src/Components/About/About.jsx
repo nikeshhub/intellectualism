@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Typography, Card, Collapse } from "antd";
+import { Row, Col, Typography, Card, Collapse, Divider } from "antd";
 import { RocketOutlined, ToolOutlined, TeamOutlined } from "@ant-design/icons";
 import './About.css'
 
@@ -10,6 +10,7 @@ const AboutUs = () => {
   return (
     <div className="about-container">
       <Title level={2}>About "Intellectualism"</Title>
+      <Divider></Divider>
       {/* Overview */}
       <Title level={3}>Overview</Title>
       <Row gutter={[16, 16]} style={{ marginBottom: "5rem" }}>

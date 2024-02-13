@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Image } from "antd";
+import { Row, Col, Card, Image, Divider } from "antd";
 
 const Gallery = () => {
   const galleryItems = [
@@ -33,6 +33,7 @@ const Gallery = () => {
   return (
     <div style={{ padding: "4rem 2rem" }}>
       <h1>Gallery</h1>
+      <Divider/>
       <Row gutter={[16, 16]}>
         {galleryItems.map((item) => (
           <Col key={item.id} xs={24} sm={12} md={8} lg={6}>
