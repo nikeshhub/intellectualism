@@ -33,7 +33,7 @@ const HomePage = () => {
   const textContent = (
     <div className="text-content">
       {/* <h1 className="header">Intellectualism</h1> */}
-      <h1 style={{ fontSize: "2.8rem", marginBottom: "1.5rem" }}>
+      <h1 style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>
         Every
         <span style={{ color: "#007A7A", fontWeight: "bold" }}>
           {" "}

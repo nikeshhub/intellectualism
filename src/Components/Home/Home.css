@@ -87,15 +87,12 @@
 @media screen and (max-width: 768px) {
   .home-container {
     flex-direction: column-reverse; /* Reverse the order of columns for better stacking on small screens */
-    padding: 5rem 0 0 0;
+    padding: 5rem 1rem 0;
   }
   .text-content {
     padding: 0 1rem;
   }
 
-  .home-container .ant-col {
-    width: 100%; /* Make columns take full width on small screens */
-  }
   .home-container .ant-row {
     flex-direction: column-reverse;
   }
@@ -130,13 +127,5 @@
   }
   .button-orderbook {
     margin-top: 0;
-  }
-
-  .why-container .ant-row {
-    flex-direction: column; /* Stack columns vertically on small screens */
-  }
-
-  .order-the-book .ant-col {
-    width: 100%; /* Make columns take full width on small screens */
   }
 }
