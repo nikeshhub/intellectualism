@@ -9,6 +9,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Community from "./Components/Community/Community";
+import Register from "./Components/Register/Register";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/community" element={<Community />} />
+        
+        <Route path="/register" element={<Register />} />
       </Routes>
       <AppFooter />
     </div>

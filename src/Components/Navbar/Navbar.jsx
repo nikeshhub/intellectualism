@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Layout, Menu, Button, Drawer, Row, Col } from "antd";
+import { Layout, Menu, Button, Drawer, Row, Col, Modal } from "antd";
 import {
   HomeOutlined,
   ContactsOutlined,
@@ -9,12 +9,14 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import Register from "../Register/Register";
 
 const { Header } = Layout;
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
 
   const showDrawer = () => {
     setVisible(true);
@@ -22,6 +24,13 @@ const Navbar = () => {
 
   const onClose = () => {
     setVisible(false);
+  };
+  const showModal = () => {
+    setModalVisible(true);
+  };
+
+  const handleCancel = () => {
+    setModalVisible(false);
   };
 
   return (
@@ -39,7 +48,12 @@ const Navbar = () => {
                   maxWidth: "150px",
                 }}
               >
-                Intellectualism
+                <img
+                  src="https://res.cloudinary.com/duaz5kg1m/image/upload/v1707844496/website-top_bwhtin.png"
+                  alt=""
+                  style={{ width: "150px" }}
+                />
+                {/* Intellectualism */}
               </div>
             </a>
           </Col>
@@ -91,13 +105,23 @@ const Navbar = () => {
               >
                 Login
               </Button>
+
               <Button
+                onClick={showModal}
                 style={{ backgroundColor: "#f26a21", marginLeft: "10px" }}
                 type="primary"
                 danger
               >
                 Sign Up
               </Button>
+              <Modal
+                title="Sign Up"
+                visible={modalVisible}
+                onCancel={handleCancel}
+                footer={null}
+              >
+                <Register onCancel={handleCancel} />
+              </Modal>
             </div>
           </Col>
           <Col xs={4} sm={4} md={0}>
@@ -168,16 +192,18 @@ const Navbar = () => {
               </Button>
             </Menu.Item>
             <Menu.Item key="7" className="nav-item">
-              <Button
-                style={{
-                  backgroundColor: "#f26a21",
-                  marginLeft: "10px",
-                  fontWeight: "bold",
-                }}
-                type="primary"
-              >
-                Sign Up
-              </Button>
+              <Link to="register">
+                <Button
+                  style={{
+                    backgroundColor: "#f26a21",
+                    marginLeft: "10px",
+                    fontWeight: "bold",
+                  }}
+                  type="primary"
+                >
+                  Sign Up
+                </Button>
+              </Link>
             </Menu.Item>
           </Menu>
         </Drawer>
