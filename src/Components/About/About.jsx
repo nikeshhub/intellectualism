@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Typography, Card, Collapse, Divider } from "antd";
 import { RocketOutlined, ToolOutlined, TeamOutlined } from "@ant-design/icons";
-import './About.css'
+import "./About.css";
 
 const { Title, Paragraph } = Typography;
 const { Panel } = Collapse;
@@ -79,6 +79,7 @@ const AboutUs = () => {
               We embrace diverse perspectives and seek to understand different
               viewpoints.
             </Paragraph>
+            <Paragraph>Hiiii</Paragraph>
           </Card>
         </Col>
       </Row>
@@ -130,7 +131,7 @@ const AboutUs = () => {
         </Col>
         <Col xs={24} md={6}>
           <img
-            src="https://res.cloudinary.com/duaz5kg1m/image/upload/v1707319902/WhatsApp_Image_2024-02-07_at_01.58.27_mts5fw.jpg"
+            src="https://res.cloudinary.com/duaz5kg1m/image/upload/v1707842133/WhatsApp_Image_2024-02-11_at_23.22.11_qdskgi.jpg"
             alt="Mission"
             style={{ width: "100%" }}
           />
